@@ -17,6 +17,7 @@ Key Product Domain areas:
 ## Source Code Layout Overview
 The Vileware respository at the root contains the source code under **/application** which is made up of microservices utilizing a [Gradle Multi Project Layout](https://docs.gradle.org/current/userguide/multi_project_builds.html); all the services are contained in this one GitHub respostiory that utilizes a [Monorepo](https://monorepo.tools/) approach.  Then under **/cdk** are the deployment scripts using Java with [CDK](https://aws.amazon.com/cdk/).
 
+```
 /root
   |
   |-/application
@@ -26,6 +27,7 @@ The Vileware respository at the root contains the source code under **/applicati
   
   |
   |-/cdk
+```
 
 ## Architecture
 

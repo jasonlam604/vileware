@@ -23,10 +23,11 @@ Key Product Domain areas:
 - AWS Services & Tools
    - [AWS Cloud Development Kit / CDK] (https://aws.amazon.com/cdk/) using [Maven](https://maven.apache.org/) and [Java](https://www.java.com/en/)
    - [Amazon Elastic Container Registry / ECR](https://aws.amazon.com/ecr/)
-   - SNS & SQS
-   - VPC
-   - XRAY
-   - RDS Postgres
+   - [Amaonze Simple Notification Service / SNS](https://aws.amazon.com/sns/)
+   - [Amazon Simple Queue Service / SQS](https://aws.amazon.com/sqs/)
+   - [Amazon Virtual Private Cloud / VPC](https://aws.amazon.com/vpc/)
+   - [Amazon X-RAY](https://aws.amazon.com/xray/)
+   - [RDS - Postgres](https://aws.amazon.com/rds/)
 
 ## Source Code Layout Overview
 The Vileware respository at the root contains the source code under **/application** which is made up of microservices utilizing a [Gradle Multi Project Layout](https://docs.gradle.org/current/userguide/multi_project_builds.html); all the services are contained in this one GitHub respostiory that utilizes a [Monorepo](https://monorepo.tools/) approach.  Then under **/cdk** are the deployment scripts using Java with [CDK](https://aws.amazon.com/cdk/).

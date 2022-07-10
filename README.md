@@ -23,7 +23,7 @@ Key Product Domain areas:
 - AWS Services & Tools
    - [AWS Cloud Development Kit / CDK] (https://aws.amazon.com/cdk/) using [Maven](https://maven.apache.org/) and [Java](https://www.java.com/en/)
    - [Amazon Elastic Container Registry / ECR](https://aws.amazon.com/ecr/)
-   - [Amaonze Simple Notification Service / SNS](https://aws.amazon.com/sns/)
+   - [Amaonz Simple Notification Service / SNS](https://aws.amazon.com/sns/)
    - [Amazon Simple Queue Service / SQS](https://aws.amazon.com/sqs/)
    - [Amazon Virtual Private Cloud / VPC](https://aws.amazon.com/vpc/)
    - [Amazon X-RAY](https://aws.amazon.com/xray/)

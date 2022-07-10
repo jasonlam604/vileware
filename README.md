@@ -3,7 +3,7 @@
 ## Overview
 Vileware is an open source Gaming API Service with the intent to help assist provide a baseline
 foundational system you can enhance and continually build. Vileware provides
-a fully functional microservices boilerplate foundation for your project. 
+a fully functional [Monorepo](https://monorepo.tools/) [Microservices](https://microservices.io/) boilerplate foundation for your project. 
 
 Key Product Domain areas:
 

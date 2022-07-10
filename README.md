@@ -16,9 +16,9 @@ Key Product Domain areas:
 - [Docker](https://www.docker.com/)
 - Bash
 - [Java 17](https://www.java.com/en/)
-  - [Spring Boot](https://spring.io/projects/spring-boot)
-  - [Lombok](https://projectlombok.org/)
-  - [Gradle](https://gradle.org/)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Lombok](https://projectlombok.org/)
+- [Gradle](https://gradle.org/)
 - IDE of your choice will make your life much easier, I'm using [Intellij Community Edition](https://www.jetbrains.com/idea/download/)
 - AWS Services & Tools
    - [AWS Cloud Development Kit / CDK] (https://aws.amazon.com/cdk/) using [Maven](https://maven.apache.org/) and [Java](https://www.java.com/en/)
@@ -46,6 +46,7 @@ The Vileware respository at the root contains the source code under **/applicati
 ## Architecture
 
 Full architecture documentation provided in the [Wiki, System Architecture](https://github.com/jasonlam604/vileware/wiki/System-Architecture) section
+
 
 
 ## Deployment

@@ -1,0 +1,40 @@
+springdoc:
+  swagger-ui.path: /openapi/swagger-ui.html
+  api-docs.path: /openapi/v3/api-docs
+  packagesToScan: io.vileware
+  pathsToMatch: /**
+
+server.port: 7000
+server.error.include-message: always
+
+app:
+  core-service:
+    host: localhost
+    port: 7001
+  event-service:
+    host: localhost
+    port: 7002
+  stat-service:
+    host: localhost
+    port: 7003
+
+logging:
+  level:
+    root: INFO
+    io.vileware: DEBUG
+
+---
+spring.config.activate.on-profile: docker
+
+server.port: 8080
+
+app:
+  core-service:
+    host: core
+    port: 8080
+  event-service:
+    host: event
+    port: 8080
+  stat-service:
+    host: stat
+    port: 8080

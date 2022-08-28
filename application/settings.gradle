@@ -1,0 +1,2 @@
+rootProject.name = 'vileware'
+include 'common', 'services:core-service', 'services:stat-service', 'services:event-service', 'services:engine-service'

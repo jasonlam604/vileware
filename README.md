@@ -109,6 +109,6 @@ Full deployment information provided in the [Wiki, System Deployment](https://gi
 
 ## Smoke Test Services
 
-### Docker Enabled
+### When using Docker
 
-### Without Docker
+### When not using Docker

@@ -9,13 +9,11 @@ package io.vileware.core.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.vileware.common.domain.Base;
 import io.vileware.common.dto.PlayerDTO;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.SneakyThrows;
+import lombok.*;
 
 @Data
 @NoArgsConstructor
+@EqualsAndHashCode(callSuper=false)
 public class Player extends Base {
     @NonNull
     private Integer id;

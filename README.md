@@ -300,7 +300,7 @@ app:
 ...
 ```
 
-Spring Profile with activated by Docker sets everything to port 8080
+Spring Profile activated with Docker sets everything to port 8080
 ```
 spring.config.activate.on-profile: docker
 

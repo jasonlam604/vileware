@@ -227,6 +227,93 @@ Full deployment information provided in the [Wiki, System Deployment](https://gi
 
 ## Smoke Test Services
 
+Assuming you the docker containers running or are running the services individual on the 7xxx ports.
+
 ### When using Docker
 
+in ~/vileware/test, run the following:
+
+```
+./test.bash
+```
+
+A successful output:
+
+```
+HOST=localhost
+PORT=8080
+Wait for: curl http://localhost:8080/studios... DONE, continues...
+*************************************************************
+* Studios tests                                             *
+*************************************************************
+Test OK (HTTP Code: 200)
+Test OK (actual value: 3)
+Test OK (HTTP Code: 200)
+Test OK (actual value: "Vileware")
+Test OK (HTTP Code: 404, {"status":"failure","message":"No studio found for studioId: 99","code":404,"data":null})
+Test OK (actual value: No studio found for studioId: 99)
+*************************************************************
+* Event tests                                               *
+*************************************************************
+Test OK (HTTP Code: 200)
+Test OK (actual value: 42)
+*************************************************************
+* Stat tests                                                *
+*************************************************************
+Test OK (HTTP Code: 200)
+Test OK (actual value: 666)
+*************************************************************
+* Swagger/OpenAPI tests                                     *
+*************************************************************
+Test OK (HTTP Code: 302, )
+Test OK (HTTP Code: 200)
+Test OK (HTTP Code: 200)
+Test OK (actual value: 3.0.1)
+Test OK (HTTP Code: 200)
+```
+
 ### When not using Docker
+
+This is the same as running against Docker container except the services are not hidden behind the edge service (engine service) and 
+are expose individually on seperate ports.  
+
+```
+ HOST=localhost PORT=7000 ./test.bash
+```
+
+Currently, the ports are set to 7xxx (7000s) see */engine-service/src/main/resources/application.yml*
+
+```
+...
+...
+app:
+  core-service:
+    host: localhost
+    port: 7001
+  event-service:
+    host: localhost
+    port: 7002
+  stat-service:
+    host: localhost
+    port: 7003
+...
+...
+```
+
+Spring Profile with activated by Docker sets everything to port 8080
+```
+spring.config.activate.on-profile: docker
+
+server.port: 8080
+
+app:
+  core-service:
+    host: core
+    port: 8080
+  event-service:
+    host: event
+    port: 8080
+  stat-service:
+    host: stat
+    port: 8080
+```

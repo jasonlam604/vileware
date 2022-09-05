@@ -103,7 +103,12 @@ What is included in this project is the ability to deploy to [AWS](https://aws.a
 
 Full deployment information provided in the [Wiki, System Deployment](https://github.com/jasonlam604/vileware/wiki/System-Deployment) section
 
-# Unit Testing
+# Testing
 
-# Integration Testing
+## Unit Tests
 
+## Smoke Test Services
+
+### Docker Enabled
+
+### Without Docker

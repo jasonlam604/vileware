@@ -37,13 +37,14 @@ The Vileware respository at the root contains the source code under **/applicati
   |
   |-/application
   |     |
-  |     |-/gradle
+  |     |- docker.compose.yml
+  |     |- settings.gradle
   |     |
   |     |-/common
   |     |    |
   |     |    |-/src/main/java
   |     |    |
-  |     |    |-build.gradle  
+  |     |    |- build.gradle  
   |     |
   |     |-/services
   |          |
@@ -51,37 +52,52 @@ The Vileware respository at the root contains the source code under **/applicati
   |          |     |
   |          |     |-/src
   |          |     |   |-/main
+  |          |     |   |   |-/resources/application.yml
+  |          |     |   |
   |          |     |   |-/test
   |          |     |
-  |          |     |-build.gradle
+  |          |     |- build.gradle
   |          |
   |          |-/core-service
   |          |     |
   |          |     |-/src
   |          |     |   |-/main
+  |          |     |   |   |-/resources/application.yml
+  |          |     |   |  
   |          |     |   |-/test
   |          |     |
-  |          |     |-build.gradle
+  |          |     |- build.gradle
   |          |
   |          |-/event-service
   |          |     |
   |          |     |-/src
   |          |     |   |-/main
+  |          |     |   |   |-/resources/application.yml
+  |          |     |   |  
   |          |     |   |-/test
   |          |     |
-  |          |     |-build.gradle
+  |          |     |- build.gradle
   |          |
   |          |-/stat-service
-  |          |     |
-  |          |     |-/src
-  |          |     |   |-/main
-  |          |     |   |-/test
-  |          |     |
-  |          |     |-build.gradle
+  |                |
+  |                |-/src
+  |                |   |-/main
+  |                |   |   |-/resources/application.yml
+  |                |   |  
+  |                |   |-/test
+  |                |
+  |                |- build.gradle
   |
   |-/cdk
+  |   |
+  |   |--[Coming soon CDK scripts using Java and Maven]
   |
   |-/test
+      |
+      |-test.bash
+      |
+      |-functions.bash
+      
 ```
 
 

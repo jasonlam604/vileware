@@ -199,8 +199,11 @@ At this point for a quick verification see [Smoke Test](#smoke-test-services)
 
 ## Architecture
 
-Full architecture documentation provided in the [Wiki, System Architecture](https://github.com/jasonlam604/vileware/wiki/System-Architecture) section
+Full architecture documentation provided in the Vileware [Wiki](https://github.com/jasonlam604/vileware/wiki), in progress
 
+- [ ] [Business Architecture & Product Services](https://github.com/jasonlam604/vileware.io/wiki/Business-Architecture--&-Product-Services)
+- [ ] [System Application Architecture](https://github.com/jasonlam604/vileware.io/wiki/System-Application-Architecture)
+- [ ] [Infrastructure Architecture](https://github.com/jasonlam604/vileware.io/wiki/Infrastructure-Architecture)
 
 
 ## Deployment
@@ -212,7 +215,7 @@ What is included in this project is the ability to deploy to [AWS](https://aws.a
 - QA 
 - Adhoc emphermal environments
 
-Full deployment information provided in the [Wiki, System Deployment](https://github.com/jasonlam604/vileware/wiki/System-Deployment) section
+Full deployment information provided in the [Infrastructure Architecture](https://github.com/jasonlam604/vileware.io/wiki/Infrastructure-Architecture) section, in progress.
 
 # Testing
 

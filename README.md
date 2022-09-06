@@ -221,6 +221,19 @@ Full deployment information provided in the [Infrastructure Architecture](https:
 
 ## Unit Tests
 
+Trivial unit tests available with the intent to provide boilerplate pattern to follow under each of the services
+
+```
+  |          |-/[N-service]
+  |          |     |
+  |          |     |-/src
+  |          |     |   |-/main
+  |          |     |   |   |-/resources/application.yml
+  |          |     |   |
+  |          |     |   |-/test
+```
+Take note the engine-service, the edge service that models after the Microservice Aggregator Pattern, has dependicies on other services to avoid a coupling and to only test behaviours of that service Mockito is used for Mock Objects.
+
 ## Smoke Test Services
 
 Assuming you the docker containers running or are running the services individual on the 7xxx ports.

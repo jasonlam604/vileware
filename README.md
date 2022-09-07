@@ -3,6 +3,21 @@
 ## Overview
 Vileware is an open source Gaming API Service with the intent to help assist provide a baseline foundational system you can enhance and continually build. Vileware provides a fully functional [Microservices](https://microservices.io/) boilerplate foundation for your project. All the code is contain in this one repo using a [Monorepo](https://monorepo.tools/) approach.
 
+The Monorepo approach allows one, literally one software engineer to pragmatically build a system from ground up but yet have flexibility to scale
+out where needed based on services with super ease of viewing all the code in one spot.  There was explicit decision to have a common library
+that would all each service to share commonalities such as DTOs, HTTP utilities...etc. Arguably this could be an anti-pattern distrubted monolith, that said what is being gained here is the support of DRY, Do Not Repeat Yourself.
+
+Here
+
+## Objectives
+
+[x] Release 0.1.0
+[ ] Release 0.2.0 - Add in Persistence, Postgres or MySQL
+[ ] Release 0.3.0 - Add in Async Logging via Messaging using RabbitMQ / Amazon MQ
+[ ] Release 0.4.0 - Add in Caching via Redis
+[ ] Release x.x.x - To Be Determined
+
+
 ## Tech Stack Overview
 - [x] [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/get-started/08_using_compose/)
 - [x] [Bash](https://www.gnu.org/software/bash/), used for smoke testing integration

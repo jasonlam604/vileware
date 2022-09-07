@@ -356,3 +356,26 @@ app:
     host: stat
     port: 8080
 ```
+
+# API Documentation / Open API
+
+Each of the services are prepared serve OpenAPI documentation, currently the Engine service is viewable both running via Docker or as individual service:
+
+- Individual Service: http://localhost:7000/openapi/swagger-ui/index.html 
+- Docker: http://localhost:8080/openapi/swagger-ui/index.html
+
+Example of what it looks like:
+
+![image](https://github.com/jasonlam604/vileware/blob/main/doc/images/vileware-open-api-engine-service-screenshot.png)
+
+As for the internal service that intended to be served behind the Aggregator service one can currently only view them when the services are ran individually outside of Docker:
+
+- Engine Service http://localhost:7000/openapi/swagger-ui/index.html 
+- Core Service http://localhost:7001/openapi/swagger-ui/index.html 
+- Event Service http://localhost:7002/openapi/swagger-ui/index.html 
+- Stat Service http://localhost:7003/openapi/swagger-ui/index.html 
+
+For them to be serviced in all in one location and to utilized the drop down, you'll need to configure service discovery such as Eureka and Spring Cloud. This may be included in future releases.
+
+
+

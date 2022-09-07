@@ -19,6 +19,8 @@ that would allow each service to share commonalities such as DTOs, HTTP utilitie
 
 Once the system orangically grows and each system grows naturally supports the organic growth of teams namely what are modernly called PODs, this allows each POD to agnostically run at their own speeds and grow accordingly whether it's technically or from a POD team member count perspective
 
+> **_NOTE:_**  Initially from the perspective of managability ideally sticking to a common tech stack makes everything easier in this case the Java ecosystem, that said there is no reason why as the team grows and where it make sense different tech stacks can be introduced, again then to keep with a Monorepo approach Gradle may not be the best tool to use, see [Bazel](https://bazel.build/)
+
 Here, is what the system looks like with 1 common library and 4 services where engine service is the edge service (Microservice Aggregator Pattern). As you can see a software engineer easily can view the entire project and yet still feasiably manage a microservice environment locally using Docker or simply by starting each service. Take note this project is prepped (yet to be completed) to be deployed into a Cloud Native environment, intent to be deployable in AWS using CDK (Java & Maven) along with the use of GitHub Actions.
 
 ![image](https://github.com/jasonlam604/vileware/blob/main/doc/images/vileware-ide-screenshot.png)

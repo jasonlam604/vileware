@@ -1,21 +1,36 @@
 # Vileware
 
 ## Overview
-Vileware is an open source Gaming API Service with the intent to help assist provide a baseline foundational system you can enhance and continually build. Vileware provides a fully functional [Microservices](https://microservices.io/) boilerplate foundation for your project. All the code is contain in this one repo using a [Monorepo](https://monorepo.tools/) approach.
+Vileware is an open source Gaming API Service with the intent to help assist provide a baseline foundational system you can enhance and continually build. 
+
+Vileware is made up a number of backend RESTful API services with the intent to be being utilized for video games. It does NOT provide video game engine services or any game specific behaviours but it rather provides common cross cutting concerns for one or more games. The key value of the services are:
+
+- Re-usability of services across more than one game franchise and/or game title.
+- KYP, Know Your Player, by having the capability to manage your each player across multiple titles allows you to more easily gain insights to your players behaviours and ultimately provide a improve player experience
+- Each service is individualized, you select the services of interest and are able to scale each service when required
+
+Vileware provides a fully functional [Microservices](https://microservices.io/) boilerplate foundation for your project. All the code is contain in this one repo using a [Monorepo](https://monorepo.tools/) approach.
 
 The Monorepo approach allows one, literally one software engineer to pragmatically build a system from ground up but yet have flexibility to scale
-out where needed based on services with super ease of viewing all the code in one spot.  There was explicit decision to have a common library
-that would all each service to share commonalities such as DTOs, HTTP utilities...etc. Arguably this could be an anti-pattern distrubted monolith, that said what is being gained here is the support of DRY, Do Not Repeat Yourself.
+out where needed based on services with super ease of viewing all the code in one spot.  There was an explicit decision to have a common library
+that would allow each service to share commonalities such as DTOs, HTTP utilities...etc. Arguably this could be viewed as an anti-pattern namely *distrubted monolith*, that said what is being gained here is the support of DRY, Do Not Repeat Yourself.
 
-Here
+> **_NOTE:_**  Project currently uses Gradle for Monorepo admittly this is more Java centric, potentially revisit the tooling, such as [Bazel](https://bazel.build/)
+
+Once the system orangically grows and each system grows naturally supports the organic growth of teams namely what are modernly called PODs, this allows each POD to agnostically run at their own speeds and grow accordingly whether it's technically or from a POD team member count perspective
+
+Here, is what the system looks like with 1 common library and 4 services where engine service is the edge service (Microservice Aggregator Pattern). As you can see a software engineer easily can view the entire project and yet still feasiably manage a microservice environment locally using Docker or simply by starting each service. Take note this project is prepped (yet to be completed) to be deployed into a Cloud Native environment, intent to be deployable in AWS using CDK (Java & Maven) along with the use of GitHub Actions.
+
+![image](https://github.com/jasonlam604/vileware/blob/main/doc/images/vileware-ide-screenshot.png)
+
 
 ## Objectives
 
-[x] Release 0.1.0
-[ ] Release 0.2.0 - Add in Persistence, Postgres or MySQL
-[ ] Release 0.3.0 - Add in Async Logging via Messaging using RabbitMQ / Amazon MQ
-[ ] Release 0.4.0 - Add in Caching via Redis
-[ ] Release x.x.x - To Be Determined
+- [x] Release 0.1.0 - Foundational work: Gradle Multi Project, Mono Repo, Docker, OpenAPI for each service, Unit Test, Smoke Integration Test
+- [ ] Release 0.2.0 - Add in Persistence, Postgres or MySQL
+- [ ] Release 0.3.0 - Add in Async Logging via Messaging using RabbitMQ / Amazon MQ
+- [ ] Release 0.4.0 - Add in Caching via Redis
+- [ ] Release x.x.x - To Be Determined
 
 
 ## Tech Stack Overview
